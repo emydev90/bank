@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Transferencia de banco</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- GOOGLE FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Literata&display=swap" rel="stylesheet">
+	<!-- FONTS AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+	<h1 class="center"  id="h1"><i class="fas fa-university"></i> BANCO DE EMY</h1>
+	<h3 class="center">Transferencia de banco</h3>
+	<h5 class="center">Horario de transferencia: 9am - 12m / 15h - 20h</h5>
+	<p class="datos_cliente">Cliente: <span id="nombre_del_cliente"></span></p>	
+	<p class="datos_cliente">Saldo del cliente: <span id="saldo_cuenta_cliente"></span></p>
+	<br>
+	<div>
+		<span>Nombre del cliente: </span>
+		<input type="text" name="" id="nombre_cliente_destino">
+	</div>
+	<div>
+		<span>Número de identificacion: </span>
+		<input type="text" name="" id="numero_identificacion_destino">
+	</div>
+	<div>
+		<span>Número de cuenta del cliente: </span>
+		<input type="number" name="" id="cuenta_cliente_destino">		
+	</div>
+	<div>
+		<span>Banco destino: </span>
+		<select id="banco_cliente_destino">
+			<option value="Bank">Bank</option>
+			<option value="Banco">Banco</option>
+		</select>
+	</div>
+	<div>
+		<span>Monto a transferir:</span>
+		<input type="number" name="" id="monto_trans_destino">
+	</div>
+	<div>
+		<span>Concepto:</span>
+		<input type="text" name="" id="concepto_trans_html">
+	</div>
+	<input type="button" name="" value="Transferir dinero" id="boton_html">
+	<br>
+	<br>
+	<div id="saldo_html"></div>
+	<div class="mensajes_error">
+		<span id="cliente_verificado_hmtl"></span>
+		<span id="horario_html"></span>
+		<span id="destino_verificado_html"></span>
+	</div>
+	<div id="div_datos_trans">
+		<h4>DATOS DE LA TRANSFERENCIA:</h4>
+		<p>Cliente destino: <span id="n_cliente_destino"></span></p>
+		<p>Número de identificación: <span id="n_ident_destino"></span></p>
+		<p>Cuenta destino: <span id="c_cliente_destino"></span></p>
+		<p>Banco destino: <span id="b_cliente_destino"></span></p>
+		<p>Monto de la transferencia: <span id="m_trans_destino"></span></p>
+		<p>Concepto de la transferencia: <span id="c_trans_destino"></span></p>
+		<input type="button" name="" value="Ocultar datos" id="ocultar_datos">
+	</div>
+	<input type="button" name="" value="Mostrar datos" id="mostrar_datos">
+	<script src="transferencia_2.js"></script>
+</body>
+</html>

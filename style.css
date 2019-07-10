@@ -1,0 +1,29 @@
+body{	
+	font-family: 'Literata', serif;
+}
+h1{
+	color: green;
+	font-family: 'Lato', sans-serif;
+}
+
+.center{
+	text-align: center;	
+}
+
+.datos_cliente{
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.trans{
+	color: blue;
+}
+
+#div_datos_trans{
+	display: none;
+}
+
+#mostrar_datos{
+	display: none;
+}
